@@ -1,7 +1,7 @@
 <?php
 namespace base;
 
-use thomasdilts\sms-worshiphhn\base\Sms;
+use thomasdilts\sms_worshiphhn\base\Sms;
 
 class SmsForIp1 extends Sms
 {
