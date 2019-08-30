@@ -15,7 +15,9 @@ class SmsForIp1 extends Sms
 	}
 	public function getSmsStatus($smsId, $smsLastStatusId, $smsLastStatusText)
 	{
-        //$module=$this->getModule();
+		if($smsLastStatusId == '22'){
+			return ['statusId' => $smsLastStatusId, 'statusText' => $smsLastStatusText];
+		}
 		$confIn = array(
 			'account' => $this->account,
 			'password' => $this->password,
@@ -43,7 +45,6 @@ class SmsForIp1 extends Sms
 	}
 	public function sendSms($message, $phoneNumber)
 	{
-        //$module=$this->getModule();
 		$confIn = array(
 			'account' => $this->account,
 			'password' => $this->password,
