@@ -1,5 +1,5 @@
 {
-    "name": "thomasdilts/sms-worshiphhn-ip1",
+    "name": "thomasdilts/sms_worshiphhn_ip1",
     "type": "library",
     "description": "This is an SMS system using the sms supplier https://ip1sms.com for the worshiphhn project.",
     "keywords": ["worshiphhn","SMS","yii2"],
