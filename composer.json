@@ -19,7 +19,7 @@
     ],
     "require": {
         "php": ">=7.0.0",
-        "thomasdilts/sms-worshiphhn": "*",
+        "thomasdilts/sms-worshiphhn": "*"
     },
     "autoload": {
         "psr-4": {
