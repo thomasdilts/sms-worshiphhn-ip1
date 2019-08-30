@@ -1,4 +1,3 @@
-# sms-worshiphhn
-This is an SMS system interface for the worshiphhn project.
-This only defines the SMS interface for worshiphhn and is not an actual SMS communication to a supplier.
-The actual SMS communication must be added in another plugin
+# sms-worshiphhn-ip1
+This is an SMS system using the sms supplier https://ip1sms.com for the worshiphhn project.
+This vendor must be a subclass of the file SmsInterface found in the thomasdilts/worshiphhn project so that WorshipHHN can use it.
