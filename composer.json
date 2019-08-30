@@ -19,11 +19,11 @@
     ],
     "require": {
         "php": ">=7.0.0",
-        "thomasdilts/sms-worshiphhn": "*"
+        "thomasdilts/sms_worshiphhn": "*"
     },
     "autoload": {
         "psr-4": {
-            "thomasdilts\\sms-worshiphhn-ip1\\": ""
+            "thomasdilts\\sms_worshiphhn_ip1\\": ""
         }
     }
 }
