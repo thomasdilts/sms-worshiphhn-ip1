@@ -1,0 +1,29 @@
+{
+    "name": "thomasdilts/sms-worshiphhn-ip1",
+    "type": "library",
+    "description": "This is an SMS system using the sms supplier https://ip1sms.com for the worshiphhn project.",
+    "keywords": ["worshiphhn","SMS","yii2"],
+    "homepage": "http://worshiphhn.org",
+    "license": "GPL-3.0-or-later",
+    "support": {
+        "issues": "https://github.com/thomasdilts/WorshipHHN/issues?state=open",
+        "forum": "http://worshiphhn.org/forum/",
+        "wiki": "https://github.com/thomasdilts/WorshipHHN/wiki",
+        "source": "https://github.com/thomasdilts/WorshipHHN"
+    },    
+    "authors": [
+        {
+            "name": "Thomas Dilts",
+            "email": "thomas@worshiphhn.org"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "thomasdilts/sms-worshiphhn": "*",
+    },
+    "autoload": {
+        "psr-4": {
+            "thomasdilts\\sms-worshiphhn-ip1\\": ""
+        }
+    }
+}
