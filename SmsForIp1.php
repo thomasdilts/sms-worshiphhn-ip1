@@ -104,7 +104,7 @@ class SmsForIp1 extends Sms
 	}
 	public function getImplementationLevel()
 	{
-		return IMPLEMENTED_ID_AND_STATUS;
+		return Sms::IMPLEMENTED_ID_AND_STATUS;
 	}
 	private function formatPhoneNumber($phoneNumber){
 		$numbersOnly = preg_replace('/[^0-9]/', '', $phoneNumber);
