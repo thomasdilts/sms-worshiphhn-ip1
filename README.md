@@ -1,6 +1,6 @@
 # Description
 This is an SMS messaging system using the sms supplier https://ip1sms.com for the [WorshipHHN](https://github.com/thomasdilts/worshiphhn) project.
-This vendor must be a subclass of the file Sms.php found in the [thomasdilts/sms_worshiphhn](https://github.com/thomasdilts/sms_worshiphhn) project so that [WorshipHHN](https://github.com/thomasdilts/worshiphhn) can use it.
+This program must be a subclass of the file Sms.php found in the [thomasdilts/sms_worshiphhn](https://github.com/thomasdilts/sms_worshiphhn) project so that [WorshipHHN](https://github.com/thomasdilts/worshiphhn) can use it.
 
 ## Rest(ful) API
 
