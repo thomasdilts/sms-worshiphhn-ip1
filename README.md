@@ -16,3 +16,24 @@ GET api/sms/sent/{sms} | Gives you a given sent SMS message
 POST api/sms/send | Send an sms with the given information directly
 GET api/sms/received?from[0]={from[0]}&from[1]={from[1]}&to[0]={to[0]}&to[1]={to[1]} | Gives you a list of your received SMS messages filtered by given URI parameters if given
 GET api/sms/received/{sms} | Gives you a given received SMS message
+
+## Add to WorshipHHN
+To add this to the [WorshipHHN](https://github.com/thomasdilts/worshiphhn) project you need to edit the file following file in [WorshipHHN](https://github.com/thomasdilts/worshiphhn), _protected/config/web.php
+
+```txt
+    'components' => [
+...
+	'SmsMessaging' => [
+		'class' => 'thomasdilts\sms_worshiphhn_ip1\SmsForIp1',
+		'account' => 'YOUR_ACCOUNT',
+		'password' => 'YOUR_PASSWORD',
+		'apiUrl' => 'api.ip1sms.com',
+		'messageFrom' => 'FROM_NAME_OR_PHONE_NUMBER',
+		'phoneNumberCountryCode' => '46', 
+		'removeLeadingZeroFromPhoneNumber' => 'true', 			
+	]		
+    ],
+```
+
+You probably then need to eventually completely rewrite the file [_protected/vendor/thomasdilts/sms_worshiphhn_ip1/SmsForIp1.php](https://github.com/thomasdilts/sms_worshiphhn_ip1) to 
+make it work with your SMS supplier. By "rewrite" I mean to copy to another file and class and then rewrite. Your class must be a sub-class of [thomasdilts\sms_worshiphhn\Sms](https://github.com/thomasdilts/sms_worshiphhn) to be useable by WorshipHHN.
