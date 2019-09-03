@@ -1,7 +1,12 @@
-# sms_worshiphhn_ip1
-This is an SMS system using the sms supplier https://ip1sms.com for the worshiphhn project.
-This vendor must be a subclass of the file SmsInterface found in the thomasdilts/worshiphhn project so that WorshipHHN can use it.
+# Description
+This is an SMS messaging system using the sms supplier https://ip1sms.com for the [WorshipHHN](https://github.com/thomasdilts/worshiphhn) project.
+This vendor must be a subclass of the file Sms.php found in the [thomasdilts/sms_worshiphhn](https://github.com/thomasdilts/sms_worshiphhn) project so that [WorshipHHN](https://github.com/thomasdilts/worshiphhn) can use it.
 
+## Rest(ful) API
+
+The SMS messaging supplier https://ip1sms.com uses a Rest(ful) API in order to do the SMS messaging. This is different then many other SMS messaging systems in that this method uses only "pulling" of the status of the messages/replies from the Supplier. In many other SMS messaging systems you need to supply an web address that the supplier can call to give changed statuses of messages. I prefer the "pulling" technique because it is more secure both for data integrity and security from hacking.
+
+The following table is the Rest(ful) API exposed by https://ip1sms.com that this program uses:
 
 API	| Description
 ---- | ---------
