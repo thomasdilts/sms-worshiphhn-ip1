@@ -14,7 +14,7 @@ GET api/sms/sent/{sms} | Gives you a given sent SMS message
 POST api/sms/send | Send an sms with the given information directly
 
 ## Add to WorshipHHN
-To add this to the [WorshipHHN](https://github.com/thomasdilts/worshiphhn) project you need to edit the file following file in [WorshipHHN](https://github.com/thomasdilts/worshiphhn), _protected/config/web.php
+To add this to the [WorshipHHN](https://github.com/thomasdilts/worshiphhn) project you need to edit the following file in [WorshipHHN](https://github.com/thomasdilts/worshiphhn), _protected/config/web.php
 
 ```txt
     'components' => [
